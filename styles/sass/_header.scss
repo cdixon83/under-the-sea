@@ -1,0 +1,44 @@
+header {
+  min-height: 500px;
+  background: url('../under-the-sea-assets/header-image.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  img {
+    position: absolute;
+    top: 119px;
+    right: 0;
+    width: 50%;
+  }
+}
+
+h1 {
+  @include fontStyle(138px);
+  line-height: 126px;
+  width: 40%;
+  margin: 50px 0 0 50px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+}
+
+nav {
+  ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    a {
+      @include fontStyle(20px);
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 0 20px;
+    }
+  }
+}
+
+
+
+
