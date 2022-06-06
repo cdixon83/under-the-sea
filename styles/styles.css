@@ -247,6 +247,10 @@ a {
   text-decoration: none;
 }
 
+:root {
+  --wrapperMargin: 4rem;
+}
+
 header {
   min-height: 500px;
   background: url("../under-the-sea-assets/header-image.jpg") no-repeat;
@@ -267,14 +271,14 @@ h1 {
   color: #fff;
   line-height: 126px;
   width: 40%;
-  margin: 50px 0 0 50px;
+  margin: 50px 0 0 var(--wrapperMargin);
   padding-bottom: 50px;
   text-transform: uppercase;
 }
 
 nav ul {
   list-style: none;
-  padding: 20px;
+  padding: 20px var(--wrapperMargin);
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,4 +296,7 @@ nav ul a {
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 0 20px;
+}
+nav ul a:last-child {
+  padding-right: 0;
 }

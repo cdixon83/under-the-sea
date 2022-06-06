@@ -16,7 +16,7 @@ h1 {
   @include fontStyle(138px);
   line-height: 126px;
   width: 40%;
-  margin: 50px 0 0 50px;
+  margin: 50px 0 0 var(--wrapperMargin);
   padding-bottom: 50px;
   text-transform: uppercase;
 }
@@ -24,7 +24,7 @@ h1 {
 nav {
   ul {
     list-style: none;
-    padding: 20px;
+    padding: 20px var(--wrapperMargin);
     margin: 0;
     display: flex;
     justify-content: flex-end;
@@ -35,6 +35,9 @@ nav {
       letter-spacing: 1px;
       text-transform: uppercase;
       padding: 0 20px;
+      &:last-child {
+        padding-right: 0;
+      }
     }
   }
 }
