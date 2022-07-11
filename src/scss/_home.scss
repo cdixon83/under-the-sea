@@ -1,11 +1,13 @@
 .home {
   .cta {
     background: $primary;
+    padding: 222px 0;
     h2 {
+      @include h3;
       text-align: center;
     }
-    p {
-      max-width: 80ch;
+    p:not(.button-accent) {
+      max-width: 92ch;
       margin: 0 auto;
     }
   }

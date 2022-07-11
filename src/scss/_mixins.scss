@@ -1,0 +1,37 @@
+@mixin fontStyle ($size, $fontFamily: $primary-font, $weight: 700, $color:$light) {
+  font-size: $size;
+  font-family: $fontFamily;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin h1 {
+  @include fontStyle(138px);
+  line-height: 126px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@mixin h2 {
+  
+}
+
+@mixin h3 {
+  @include fontStyle(42px);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@mixin h4 {
+  
+}
+
+@mixin button ($color:$light) {
+  @include fontStyle(20px, $primary-font, 700, $color);
+  text-align: center;
+  line-height: 32px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
