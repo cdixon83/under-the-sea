@@ -1,9 +1,15 @@
 .button-accent {
     text-align: center;
-    margin: 30px 0;
-    a {
+
         @include button ($primary);
         background: $accent;
-        padding: 10px var(--padding);
-    }
+        padding: 13px 33px;
+    
+}
+
+.button-primary {
+    text-align: center;
+    @include button;
+    background: $primary;
+    padding: 13px 33px;
 }

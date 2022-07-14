@@ -25,7 +25,7 @@ h1 {
 nav {
   ul {
     list-style: none;
-    padding: 33px var(--wrapperMargin) 20px;
+    padding: 31px var(--wrapperMargin) 20px;
     margin: 0;
     display: flex;
     justify-content: flex-end;
@@ -36,7 +36,7 @@ nav {
         line-height: 29px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        padding: 0 33px;
+        padding: 0 32px;
         
       }
       &:last-child a {

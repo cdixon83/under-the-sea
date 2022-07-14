@@ -1,4 +1,5 @@
 .home {
+  //cta
   .cta {
     background: $primary;
     padding: 222px 0;
@@ -6,9 +7,63 @@
       @include h3;
       text-align: center;
     }
-    p:not(.button-accent) {
-      max-width: 92ch;
+    p {
+      max-width: 90ch;
+      margin: 0 auto 45px;
+    }
+    p:last-child {
       margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  //about us section
+  .about-us {
+    --img-offset: 50px;
+    --gap: 90px;
+    background: $secondary;
+    display: flex;
+    flex-wrap: wrap;
+    .image-container {
+      background-color: $accent;
+      
+      width: calc(50% - #{var(--img-offset)} - #{var(--gap)});
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+      }
+      &.ic-1 {
+        margin-left: 50px;
+        margin-right: #{var(--gap)};
+        img {
+          right: var(--img-offset);
+          bottom: var(--img-offset);
+        }
+      }
+      &.ic-2 {
+        margin-left: #{var(--gap)};
+        margin-right: 50px;
+        position: relative;
+        top: 100px;
+        img {
+          left: var(--img-offset);
+          bottom: var(--img-offset);
+        }
+      }
+    }
+    .text-container {
+      width: calc(50% - #{var(--img-offset)} - #{var(--gap)});
+      h3 {
+        @include h4;
+      }
+      &.tc-1 {
+        margin-left: 140px;
+      }
+      &.tc-2 {
+        margin-right: 140px
+      }
     }
   }
 }
